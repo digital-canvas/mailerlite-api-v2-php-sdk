@@ -44,14 +44,14 @@ class BatchTest extends MlTestCase
         $requests = [];
         $batchOne = (new BatchRequest())
             ->setMethod(BatchRequest::METHOD_POST)
-            ->setPath('/api/v2/subscribers')
+            ->setPath('api/subscribers')
             ->setBody([
                 'email' => BATCH_TEST_EMAIL1,
             ]);
 
         $batchTwo = (new BatchRequest())
             ->setMethod(BatchRequest::METHOD_POST)
-            ->setPath('/api/v2/subscribers')
+            ->setPath('api/subscribers')
             ->setBody([
                 'email' => BATCH_TEST_EMAIL2,
             ]);

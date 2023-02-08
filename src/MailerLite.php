@@ -121,7 +121,7 @@ class MailerLite {
      */
     public function getBaseUrl($version = ApiConstants::VERSION)
     {
-        return ApiConstants::BASE_URL . $version . '/';
+        return ApiConstants::BASE_URL;
     }
 
 }

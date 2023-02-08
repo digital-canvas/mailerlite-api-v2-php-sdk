@@ -176,7 +176,7 @@ class RestClient {
 
         // Only adding it when provided. Not required for RestClientTest
         if ($this->apiKey) {
-            $headers['X-MailerLite-ApiKey'] = $this->apiKey;
+            $headers['Authorization'] = 'Bearer ' . $this->apiKey;
         }
 
         return $headers;
